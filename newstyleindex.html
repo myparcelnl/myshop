@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <title>Handleiding</title>
+    <meta name="description" content="The documentation to make a connection with MyParcel">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="shortcut icon" href="https://backoffice.myparcel.nl/images/favicon/favicon.ico">
+    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="css/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/github-light.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/auto_menu.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="menu col-xs-4 col-lg-3">
+            <nav class="navbar nav nav-pills nav-stacked">
+                <div class="menu-items">
+                </div>
+            </nav>
+        </div>
+        <section class="page-header col-xs-8 col-xs-offset-4 col-lg-9 col-lg-offset-3">
+            <img height="185" alt="" src="media/logo_myparcel.png">
+            <h1 class="project-name">
+                Handleiding Amazon-koppeling
+            </h1>
+        </section>
+        <section class="main-content col-xs-8 col-xs-offset-4 col-lg-7 col-lg-offset-4">
+            <h1>Inleiding</h1>
+            <p>
+                Creëer snel verzendetiketten van jouw Amazon-orders en download deze vervolgens allemaal tegelijk vanuit het MyParcel-platform. 
+            </p>
+            <div>
+            </div>
+            <div style="margin-top:10px">
+                <h1 id="1">1. Installatie</h1>
+                <h2 id="1_A">1.1 Nieuwe installatie</h2>
+                <p>
+                    In de koppeling tussen Amazon en MyParcel zijn de <b>SellerID</b> en <b>MWS Authorization</b> van jouw Amazon-account nodig. Om deze te verkrijgen,
+                    log je in via <a href="https://sellercentral.amazon.com/"><u>https://sellercentral.amazon.com/</u></a>.<br><br> In het dashboard kun je bovenaan de pagina verschillende verkooplanden selecteren. Selecteer hier bijvoorbeeld Amazon.com (Duitsland, Spanje, Italie, Verenigde Koninkrijk en Frankrijk worden ook geaccepteerd).<br><br>
+
+                    <img alt="Amazon country switch" src='media/Amazon_Country_Switch.png'><br><br>
+
+                    Ga vervolgens naar <span class=nice>'Apps & Services' > 'Manage your apps' > 'Authorise new developer' </span> en vul <b>MyParcel</b>' in bij 'Developer's Name' en <b>777787439427</b> bij 'Developer's ID'.<br><br>
+
+                    <img alt="Amazon country switch" src='media/Amazon_Authoriza_Developer.png'><br><br>
+
+
+                    Na het accepteren van de voorwaarden, worden de 'sellerID' en 'MWS authorization' getoond. Kopieer de codes en vul deze in een de gelijknamige velden van de Amazon-integratie. Deze zijn in het MyParcel systeem te vinden via <span class=nice>'Support' > 'Integratie' > 'Externe koppelingen' > 'Amazon'.
+                </p>
+                <h2 id="1_B">1.2 Updaten bestaande installatie</h2>
+                <p>
+                    Wanneer er een nieuwe versie van de Amazon-koppeling live wordt gezet, hoef je je als gebruiker geen zorgen te maken over het installeren van een nieuwe versie. Deze wordt automatisch geüpdatet, waardoor je altijd de meest recente versie gebruikt.
+                </p>
+                <h1 id="2">2. Configuratie</h1>
+                <h2 id="2_A">2.1 Instellen standaard verzendmethode</h2>
+                <p>
+                    Bij het importeren van de Amazon-orders zal de standaard pakketvoorkeuren uit jouw MyParcel-account overnemen. Klik in rechts bovenin jouw MyParcel-account op het <img height="18" alt="MyParcel account" src="media/MyParcel_Account_Icon.png">-icoon, selecteer de gewenste webshop onder 'Shopinstellingen' en ga vervolgens naar <span class=nice>Zendingen > Pakketvoorkeuren</span>.
+                </p>
+                <h1 id="3">3. Gebruik plugin</h1>
+                <h2 id="3_A">3.1 Importeren van orders</h2>
+                <p>
+                    Om de orders van Amazon te importeren, klik je in het zendingenoverzicht op <img height="25" alt="MyParcel account" src="media/MyParcel_Import_Orders.png">. Vervolgens zal een popup worden getoond waarin je tussen de verschillende actieve integraties kunt schakelen. Selecteer 'Amazon' om jouw open Amazon-orders in te zien en deze te importeren.
+
+                <img height="100" alt="MyParcel import popup" src="media/MyParcel_Import_PopUp.png">
+
+                </p>
+                <h2 id="3_E">2.5 Veelgestelde vragen over het gebruik van de plugin</h2>
+                <p>
+                <h3>Worden de barcodes teruggekoppeld naar Amazon?</h3>
+                   <i>Nee, in de huidige versie van de integratie zullen de barcodes nog niet naar Amazon worden teruggekoppeld.</i>
+                </p>
+                <footer class="site-footer">
+                    <p>
+                        <span class="site-footer-owner">MyParcel</span>
+                    </p>
+                    <p>
+                        <span class="site-footer-credits">
+                            <strong>Adres </strong>Siriusdreef 66-68, 2132 WT Hoofddorp<br />
+                            <strong>Telefoon </strong>023 30 30 315&nbsp;
+                            <strong>E-mail</strong> &nbsp;info@myparcel.nl<br />
+                            <strong>Website </strong><a href="https://www.myparcel.nl">www.myparcel.nl</a>&nbsp;
+                            <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
+                            <strong>KvK </strong>Amsterdam 34 09 97 58 <br />
+                            <strong>BTW-nr. </strong>NL8045.33.258.B01
+                        </span>
+                        <br />
+                        &nbsp;
+                    </p>
+                </footer>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    // Set postman button attributes in one place
+    postman_buttons = document.getElementsByClassName('postman-run-button');
+
+    for (i = 0; i < postman_buttons.length; i++) {
+        postman_buttons[i].setAttribute('data-postman-action', 'collection/import');
+        postman_buttons[i].setAttribute('data-postman-var-1', '065786285c2e5ed75509');
+        postman_buttons[i].setAttribute('data-postman-param', 'env%5BMyParcel%20public%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBpX2tleSIsInZhbHVlIjoiIn0seyJrZXkiOiJVc2VyLUFnZW50IiwidmFsdWUiOiJ7e1VzZXItQWdlbnR9fSIsImRlc2NyaXB0aW9uIjoiIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJhdXRoX3Rva2VuIiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsImVuYWJsZWQiOnRydWV9XQ==');
+    }
+
+    (function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+            (n = o.createElement("script")),
+                (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+
+</body>
+</html>
