@@ -1,162 +1,175 @@
-<!DOCTYPE html>
-<!-- saved from url=(0040)https://myparcelnl.github.io/lightspeed/ -->
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>myShop MyParcel installatie- gebruikershandleiding</title>
-    <meta name="description" content="Installatie- gebruikershandleiding voor de myShop MyParcel plug-in">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="shortcut icon" href="https://backoffice.myparcel.nl/images/favicon/favicon.ico">
-    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
-    <link href="css/stylesheet.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="css/github-light.css" media="screen" rel="stylesheet" type="text/css"/>
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <title>MyParcel Handleiding myShop</title>
+    <meta name="description" content="The documentation to make a connection with MyParcel">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="shortcut icon" href="https://assets.myparcel.nl/skin/images/favicon/ms-icon-144x144.png">
+    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="css/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/github-light.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/auto_menu.js"></script>
 </head>
 <body>
-<section class="page-header">
-    <p>
-        <img alt="" src="media/logo_myparcel.png">
-        <img src="media/myshop-logo.png" style="margin-bottom: 20px;height: 150px;"></p>
-    <h1 class="project-name"> 
-        Installatie- gebruikershandleiding
-    </h1>
-    <h2 class="project-tagline">
-        myShop MyParcel plug-in
-    </h2>
-    <!--<a target="_blank" class="btn" href="https://github.com/myparcelnl/Magento1">View on GitHub</a>-->
-</section>
-<section class="main-content">
-    <h1>Instructie myShop plug-in</h1>
-    <p>
-        In deze handleiding wordt uitgelegd hoe je de myShop koppeling met MyParcel kunt installeren en hoe deze koppeling werkt.
-    </p>
-    <p>
-        In de <span class="nice">myShop AppStore</span> kun je de MyParcel app vinden. Je kunt hier kiezen voor <span class="nice">Instellen</span> om vervolgens de optie <span class="nice">Geactiveerd</span> op 'Ja' te kunnen zetten. De app wordt aangeboden door MyParcel, deze is kosteloos. Om gebruik te kunnen maken van de app dien je klant te zijn bij MyParcel. Wanneer je nog geen klant bent, kunt je vrijblijvend registreren via de volgende link:
-        <a href="http://www.myparcel.nl/registreren" target="_blank">www.myparcel.nl/registreren</a>.
-    </p>
-
-    <h1>Inhoud</h1>
-    <div class="menu"><ul><li><a href="https://myparcelnl.github.io/lightspeed/#1"><b>1 Instructie myShop plugin</b></a></li><ul><li><a href="https://myparcelnl.github.io/lightspeed/#1_1">1.1 De configuratie</a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#1_2">1.2 Het wijzigen van de verzendmethode(n)</a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#1_3">1.3 Het aanmaken van de labels</a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#1_4">1.4 Track &amp; Trace mail</a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#1_5">1.5 Multishop</a></li><ul></ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#2"><b>2 Installatiehandleiding PostNL Checkout in MyParcel.</b></a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#3"><b>3 Indien je gebruik maakt van gratis verzending boven een bepaald bedrag</b></a></li><ul></ul><li><a href="https://myparcelnl.github.io/lightspeed/#4"><b>4 Hulp nodig?</b></a></li><ul></ul></ul></div>
-    <div>
-
-        <h1 id="1">1 Instructie myShop plugin</h1>
-        <h2 id="1_1">1.1 Het activeren van de plugin</h2>
-        <p>Het is belangrijk dat je eerst de basisinstellingen van de MyParcel-plugin configureert. Nadat je de plugin hebt geactiveerd, kom je op de volgende configuratiepagina:<br><br>
-        <img src="media/configuratie-1.jpg" alt="Configuratie myShop app"><br>
-        </p>
-        <p>
-        </p>
-        <ol>
-            <li>Bij <span class="nice">API sleutel</span> kun je de API key invullen. Je kunt deze bij MyParcel aanvragen via info@myparcel.nl of onder <span class="nice">Instellingen → Algemeen</span> in MyParcel.</li>
-            <li>
-                Daarnaast heb je ook de mogelijkheid om Track&Trace mails vanuit myShop te versturen. Activeer <span class="nice">MyParcel bericht instellingen</span> om van deze functie gebruik te maken.<br><br>
-                <img src="media/configuratie-2.jpg" alt="Configuratie myShop app">
-                <br><br>
-                Na het activeren, heb je de mogelijkheid om de gehele Track&Trace mail naar wens aan te passen<br><br>
-                <ul>
-                    <li>
-                        <b>Stuur PDF</b><br>
-                        Bij deze optie heb je de mogelijkheid om samen met de Track&Trace mail ook een PDF van de bestelbevestiging, factuur of pakbon mee te sturen.
-                    </li>
-                    <li>
-                        <b>Gebruik e-mail adres van de webwinkelier</b><br>
-                            Wil je dat de Track&Trace mail van een ander mailadres wordt verstuurd dan in myShop bekend is? Zet deze optie dan op 'nee' en vul vervolgens een ander mailadres in.
-                    </li>
-                    <li>
-                        <b>Gebruik e-mail adres van de klant</b><br>
-                            Wil je dat de Track&Trace mail niet standaard naar jouw klant wordt verstuurd? Zet deze optie dan op 'nee' en vul vervolgens een ander mailadres in.
-                    </li>
-                    <li>
-                        <b>Onderwerp en inhoud Track&Trace mail</b><br>
-                           Pas hier de gehele inhoud van de Track&Trace mail naar wens aan, zodat deze helemaal bij jouw webwinkel past. Maak gebruik van de code <span class="nice">{{myparcel_track_and_trace}}</span> om de door jou gegenereerde barcode direct in de mail te laten verschijnen.
-                    </li>
-                </ul>
-                <br>
-            </li>
-                </ul>
-            </li>
-        </ol>
-
-        <p> De Track&Trace mail zal vanuit myShop worden verstuurd wanneer de barcode door MyParcel is teruggekoppeld. Dit zal gebeuren zodra de zending is voorgemeld.
-
-        <h2 id="1_2">1.2 Het toevoegen van de MyParcel verzendopties</h2>
-        <p>
-        	<b><u>Let op!</u></b> De MyParcel verzendopties kunnen maar aan één verzendmethode gekoppeld worden.<br><br>
-            Ga in jouw myShop webshop-dashboard naar <span class="nice">Verzenden → Verzendopties</span>. Op deze pagina heb je de mogelijkheid om jouw verzendmethode(n) in te stellen. Maak een nieuwe verzendmethode aan of open een methode die je al eerder hebt ingesteld. <br><br>
-            <img src="media/verzendopties.jpg" alt="MyParcel Verzendopties"><br>
-        </p>
-
-        <p>
-            Om de MyParcel verzendopties aan jouw verzendmethode toe te voegen, ga je naar <span class="nice">Afleverdatum en locatie</span>. Kies vervolgens bij de optie 'Gebruik afleverdagen' voor 'Gebruik MyParcel'.
-        </p>
-        <p>
-        	Bij 'Instellingen' heb je de mogelijkheid om de algemene instellingen omtrent de afleverdagen naar wens aan te passen.<br><br>
-			<img src="media/Instellingen.jpg" alt="Instellingen MyParcel app"><br>
-        </p>
-        	<ul>
-        		<li>
-        			<b>Levering window</b><br>
-        			Met deze optie kun je aangeven tot hoever in de toekomst jouw klanten een leverdag kunnen kiezen. Je hebt de mogelijkheid om 1 tot 14 dagen te selecteren.
-        		</li>
-        		<li>
-        			<b>Laatste bestelmoment</b><br>
-        			Hier kun je aangeven tot welk moment van de dag de orders nog verwerkt kunnen worden. Als je elke dag rond 17:00 de bestellingen naar een PostNL locatie brengt is het handig om de laatste order rond 16:00 te verwerken. Wanneer jouw klanten na dit tijdstip een bestelling plaatsen zien zij een latere levermogelijkheid. Bijvoorbeeld: Het laatste bestelmoment is om 16:00 en je kunt dezelfde dag de orders verwerken en op tijd inleveren, dan zal jouw klant als eerste levermogelijkheid voor 16:00 de volgende dag zien. Wanneer jouw klant na 16:00 besteld zal het de dag erna zijn. 
-        		</li>
-        		<li>
-        			<b>Drop-off vertraging</b><br>
-        			Je kunt hier instellen hoeveel dagen jij nodig hebt om een order, die vóór jouw laatste besteltijd binnenkomt, te verwerken. Als je bijvoorbeeld 1 dag invult, zal er in de weergave in de check-out altijd rekening gehouden worden met het feit dat jij de pakketten morgen niet kunt laten leveren. Bijvoorbeeld: De bestelling wordt geplaatst op 16 juni voordat jij naar het PostNL punt gaat. Je hebt echter een verwerkingstijd van 1 dag ingesteld, dus de eerste mogelijkheid voor jou om het pakket in te leveren is dan 17 juni. Jouw klant krijgt dan dus pas 18 juni als eerst mogelijke leverdag te zien. 
-        		</li>
-        		<li>
-        			<b>Drop-off dagen</b><br>
-        			Hiermee kun je aangeven op welke dagen jij het pakket afgeeft bij een PostNL locatie. Jouw klanten krijgen hiermee de juiste beschikbare bezorgdagen aangeboden. 
-        		</li>
-        	</ul>
-        <p>
-        	Bij 'Verzendtype instellingen' kun je de verschillende beschikbare verzendoptie (de)activeren. Zet de optie <span class="nice">Voeg de MyParcel verzendkosten toe</span> op 'Ja' als je extra kosten aan jouw klanten wilt doorberekenen. Als je geen zelfgekozen kosten invult, zullen de standaard toeslagen van MyParcel doorberekend worden. Alle tarieven zijn ook in jouw MyParcel account terug te vinden via <span class="nice">Tarieven</span>.<br><br>
-        	<img src="media/verzendtype.jpg" alt="Verzendtype instellingen"><br>
-        </p>
-
-        <h2 id="1_3">1.3 Het aanmaken van de labels</h2>
-        <p>
-            Het is mogelijk om via <span class="nice">Orderbeheer</span> één of meerdere zendingen in een keer te exporteren. Selecteer de orders waar een verzendlabel van gemaakt moet worden en klik daarna op 'Kies actie'. In het midden van het uitgeklapte menu is de optie 'MyParcel acties' zichtbaar. Vervolgens heb je de mogelijkheid om te kiezen voor <span class="nice">Stuur bestellingen naar MyParcel</span> of <span class="nice">Download labels</span>. De optie 'Download labels' kan enkel gebruikt worden bij orders die al geëxporteerd zijn.<br><br>
-            <img src="media/export-1.jpg" alt="Exporteren labels">
-        </p>
-        <p>
-            Wanneer je de optie 'Stuur bestellingen naar MyParcel' gebruikt, zal je het onderstaande scherm te zien krijgen. Je krijgt de keuze om een pakket, brievenbuspakje of ongefrankeerd label te exporteren. Wanneer je een pakket selecteert, krijg je ook de mogelijkheid om extra verzendopties toe te voegen. De extra kosten voor deze opties zijn in jouw MyParcel account terug te vinden via <span class="nice">Tarieven</span>.<br><br>
-            <img src="media/export-2.jpg" alt="Exporteren labels">
-        </p>
-        <p>
-            Na het gebruiken van de optie 'Download labels' kunnen de verzendlabels gedownload worden via het tabje <span class="nice">Downloads</span>.<br><br>
-            <img src="media/downloads.jpg" alt="Downloaden labels">
-        </p>
-        <h1 id="2">2 Hulp nodig?</h1>
-        <p>
-            Indien je vragen hebt over de installatie of het gebruik van de plug-in, helpen wij je graag. Ook tips &amp; suggesties voor verbetering van de (werking) van de plug-in, horen wij graag. Mail support@myparcel.nl of bel: 023 30 30 315.
-        </p>
-
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="menu col-xs-4 col-lg-3">
+            <nav class="navbar nav nav-pills nav-stacked">
+                <div class="menu-items">
+                </div>
+            </nav>
+        </div>
+        <section class="page-header col-xs-8 col-xs-offset-4 col-lg-9 col-lg-offset-3">
+            <img height="185" alt="" src="media/logo_myparcel.png">
+            <h1 class="project-name">
+                Handleiding myShop
+            </h1>
+        </section>
+        <section class="main-content col-xs-8 col-xs-offset-4 col-lg-7 col-lg-offset-4">
+            <h1>Inleiding</h1>
+            <p>
+                In deze handleiding wordt uitgelegd hoe je de myShop koppeling met MyParcel kunt installeren en hoe deze koppeling werkt.
+            </p>
+            <p>
+                In de <span class="nice">myShop AppStore</span> kun je de MyParcel app vinden. Je kunt hier kiezen voor <span class="nice">Instellen</span> om vervolgens de optie <span class="nice">Geactiveerd</span> op 'Ja' te kunnen zetten. De app wordt aangeboden door MyParcel, deze is kosteloos. Om gebruik te kunnen maken van de app dien je klant te zijn bij MyParcel. Wanneer je nog geen klant bent, kunt je vrijblijvend registreren via de volgende link:
+                <a href="http://www.myparcel.nl/registreren" target="_blank">www.myparcel.nl/registreren</a>.
+            </p>
+            <div>
+            </div>
+            <div style="margin-top:10px">
+                <h1 id="1">1. Installatie myShop plugin</h1>
+                <h2 id="1_A">1.1 Het activeren van de plugin</h2>
+                <p>Het is belangrijk dat je eerst de basisinstellingen van de MyParcel-plugin configureert. Nadat je de plugin hebt geactiveerd, kom je op de volgende configuratiepagina:<br><br>
+                    <img src="media/configuratie-1.jpg" alt="Configuratie myShop app"><br>
+                    </p>
+                    <p>
+                    </p>
+                    <ol>
+                        <li>Bij <span class="nice">API sleutel</span> kun je de API key invullen. Je kunt deze bij MyParcel aanvragen via info@myparcel.nl of onder <span class="nice">Instellingen → Algemeen</span> in MyParcel.</li>
+                        <li>
+                            Daarnaast heb je ook de mogelijkheid om Track&Trace mails vanuit myShop te versturen. Activeer <span class="nice">MyParcel bericht instellingen</span> om van deze functie gebruik te maken.<br><br>
+                            <img src="media/configuratie-2.jpg" alt="Configuratie myShop app">
+                            <br><br>
+                            Na het activeren, heb je de mogelijkheid om de gehele Track&Trace mail naar wens aan te passen<br><br>
+                            <ul>
+                                <li>
+                                    <b>Stuur PDF</b><br>
+                                    Bij deze optie heb je de mogelijkheid om samen met de Track&Trace mail ook een PDF van de bestelbevestiging, factuur of pakbon mee te sturen.
+                                </li>
+                                <li>
+                                    <b>Gebruik e-mail adres van de webwinkelier</b><br>
+                                        Wil je dat de Track&Trace mail van een ander mailadres wordt verstuurd dan in myShop bekend is? Zet deze optie dan op 'nee' en vul vervolgens een ander mailadres in.
+                                </li>
+                                <li>
+                                    <b>Gebruik e-mail adres van de klant</b><br>
+                                        Wil je dat de Track&Trace mail niet standaard naar jouw klant wordt verstuurd? Zet deze optie dan op 'nee' en vul vervolgens een ander mailadres in.
+                                </li>
+                                <li>
+                                    <b>Onderwerp en inhoud Track&Trace mail</b><br>
+                                       Pas hier de gehele inhoud van de Track&Trace mail naar wens aan, zodat deze helemaal bij jouw webwinkel past. Maak gebruik van de code <span class="nice">{{myparcel_track_and_trace}}</span> om de door jou gegenereerde barcode direct in de mail te laten verschijnen.
+                                </li>
+                            </ul>
+                            <br>
+                        </li>
+                            </ul>
+                        </li>
+                    </ol>
+                <p> De Track&Trace mail zal vanuit myShop worden verstuurd wanneer de barcode door MyParcel is teruggekoppeld. Dit zal gebeuren zodra de zending is voorgemeld.
+                <h1 id="2">2. Configuratie</h1>
+                <h2 id="2_A">2.2 Het toevoegen van de MyParcel verzendopties</h2>
+                <p>
+                    <b><u>Let op!</u></b> De MyParcel verzendopties kunnen maar aan één verzendmethode gekoppeld worden.<br><br>
+                    Ga in jouw myShop webshop-dashboard naar <span class="nice">Verzenden → Verzendopties</span>. Op deze pagina heb je de mogelijkheid om jouw verzendmethode(n) in te stellen. Maak een nieuwe verzendmethode aan of open een methode die je al eerder hebt ingesteld. <br><br>
+                    <img src="media/verzendopties.jpg" alt="MyParcel Verzendopties"><br>
+                </p>
+                <p>
+                    Om de MyParcel verzendopties aan jouw verzendmethode toe te voegen, ga je naar <span class="nice">Afleverdatum en locatie</span>. Kies vervolgens bij de optie 'Gebruik afleverdagen' voor 'Gebruik MyParcel'.
+                </p>
+                <p>
+                    Bij 'Instellingen' heb je de mogelijkheid om de algemene instellingen omtrent de afleverdagen naar wens aan te passen.<br><br>
+                    <img src="media/Instellingen.jpg" alt="Instellingen MyParcel app"><br>
+                </p>
+                    <ul>
+                        <li>
+                            <b>Levering window</b><br>
+                            Met deze optie kun je aangeven tot hoever in de toekomst jouw klanten een leverdag kunnen kiezen. Je hebt de mogelijkheid om 1 tot 14 dagen te selecteren.
+                        </li>
+                        <li>
+                            <b>Laatste bestelmoment</b><br>
+                            Hier kun je aangeven tot welk moment van de dag de orders nog verwerkt kunnen worden. Als je elke dag rond 17:00 de bestellingen naar een PostNL locatie brengt is het handig om de laatste order rond 16:00 te verwerken. Wanneer jouw klanten na dit tijdstip een bestelling plaatsen zien zij een latere levermogelijkheid. Bijvoorbeeld: Het laatste bestelmoment is om 16:00 en je kunt dezelfde dag de orders verwerken en op tijd inleveren, dan zal jouw klant als eerste levermogelijkheid voor 16:00 de volgende dag zien. Wanneer jouw klant na 16:00 besteld zal het de dag erna zijn. 
+                        </li>
+                        <li>
+                            <b>Drop-off vertraging</b><br>
+                            Je kunt hier instellen hoeveel dagen jij nodig hebt om een order, die vóór jouw laatste besteltijd binnenkomt, te verwerken. Als je bijvoorbeeld 1 dag invult, zal er in de weergave in de check-out altijd rekening gehouden worden met het feit dat jij de pakketten morgen niet kunt laten leveren. Bijvoorbeeld: De bestelling wordt geplaatst op 16 juni voordat jij naar het PostNL punt gaat. Je hebt echter een verwerkingstijd van 1 dag ingesteld, dus de eerste mogelijkheid voor jou om het pakket in te leveren is dan 17 juni. Jouw klant krijgt dan dus pas 18 juni als eerst mogelijke leverdag te zien. 
+                        </li>
+                        <li>
+                            <b>Drop-off dagen</b><br>
+                            Hiermee kun je aangeven op welke dagen jij het pakket afgeeft bij een PostNL locatie. Jouw klanten krijgen hiermee de juiste beschikbare bezorgdagen aangeboden. 
+                        </li>
+                    </ul>
+                <p>
+                    Bij 'Verzendtype instellingen' kun je de verschillende beschikbare verzendoptie (de)activeren. Zet de optie <span class="nice">Voeg de MyParcel verzendkosten toe</span> op 'Ja' als je extra kosten aan jouw klanten wilt doorberekenen. Als je geen zelfgekozen kosten invult, zullen de standaard toeslagen van MyParcel doorberekend worden. Alle tarieven zijn ook in jouw MyParcel account terug te vinden via <span class="nice">Tarieven</span>.<br><br>
+                    <img src="media/verzendtype.jpg" alt="Verzendtype instellingen"><br>
+                </p>
+                <h1 id="3">3. Gebruik plugin</h1>
+                <h2 id="3_A">3.1 Importeren van orders</h2>
+                <p>
+                    Het is mogelijk om via <span class="nice">Orderbeheer</span> één of meerdere zendingen in een keer te exporteren. Selecteer de orders waar een verzendlabel van gemaakt moet worden en klik daarna op 'Kies actie'. In het midden van het uitgeklapte menu is de optie 'MyParcel acties' zichtbaar. Vervolgens heb je de mogelijkheid om te kiezen voor <span class="nice">Stuur bestellingen naar MyParcel</span> of <span class="nice">Download labels</span>. De optie 'Download labels' kan enkel gebruikt worden bij orders die al geëxporteerd zijn.<br><br>
+                    <img src="media/export-1.jpg" alt="Exporteren labels">
+                </p>
+                <p>
+                    Wanneer je de optie 'Stuur bestellingen naar MyParcel' gebruikt, zal je het onderstaande scherm te zien krijgen. Je krijgt de keuze om een pakket, brievenbuspakje of ongefrankeerd label te exporteren. Wanneer je een pakket selecteert, krijg je ook de mogelijkheid om extra verzendopties toe te voegen. De extra kosten voor deze opties zijn in jouw MyParcel account terug te vinden via <span class="nice">Tarieven</span>.<br><br>
+                    <img src="media/export-2.jpg" alt="Exporteren labels">
+                </p>
+                <p>
+                    Na het gebruiken van de optie 'Download labels' kunnen de verzendlabels gedownload worden via het tabje <span class="nice">Downloads</span>.<br><br>
+                    <img src="media/downloads.jpg" alt="Downloaden labels">
+                </p>
+                <footer class="site-footer">
+                    <p>
+                        <span class="site-footer-owner">MyParcel</span>
+                    </p>
+                    <p>
+                        <span class="site-footer-credits">
+                            <strong>Adres </strong>Antareslaan 31, 2132 JE Hoofddorp<br />
+                            <strong>Telefoon </strong>023 30 30 315&nbsp;
+                            <strong>E-mail</strong> &nbsp;info@myparcel.nl<br />
+                            <strong>Website </strong><a href="https://www.myparcel.nl">www.myparcel.nl</a>&nbsp;
+                            <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
+                            <strong>KvK </strong>Amsterdam 34 09 97 58 <br />
+                            <strong>BTW-nr. </strong>NL8045.33.258.B01
+                        </span>
+                        <br />
+                        &nbsp;
+                    </p>
+                </footer>
+            </div>
+        </section>
     </div>
+</div>
+<script>
+    // Set postman button attributes in one place
+    postman_buttons = document.getElementsByClassName('postman-run-button');
 
-    <footer class="site-footer">
-        <p>
-            <span class="site-footer-owner">MyParcel</span>
-        </p>
-        <p>
-        <span class="site-footer-credits">
-            <strong>Adres </strong>Siriusdreef 66-68, 2132 WT Hoofddorp&nbsp;
-            <strong>Telefoon </strong>023 30 30 315&nbsp;
-            <strong>E-mail</strong> <a href=“mailto:info@myparcel.nl” target=“_top”> &nbsp;info@myparcel.nl</a><br>
-            <strong>Website </strong><a target=“_blank” href=“https://www.myparcel.nl“>www.myparcel.nl</a>
-            <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
-            <strong>KvK </strong>Amsterdam 34 09 97 58 <br>
-            <strong>BTW-nr. </strong>NL8045.33.258.B01
-        </span>
-            <br>
-            &nbsp;
-        </p>
-    </footer>
-</section>
+    for (i = 0; i < postman_buttons.length; i++) {
+        postman_buttons[i].setAttribute('data-postman-action', 'collection/import');
+        postman_buttons[i].setAttribute('data-postman-var-1', '065786285c2e5ed75509');
+        postman_buttons[i].setAttribute('data-postman-param', 'env%5BMyParcel%20public%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBpX2tleSIsInZhbHVlIjoiIn0seyJrZXkiOiJVc2VyLUFnZW50IiwidmFsdWUiOiJ7e1VzZXItQWdlbnR9fSIsImRlc2NyaXB0aW9uIjoiIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJhdXRoX3Rva2VuIiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsImVuYWJsZWQiOnRydWV9XQ==');
+    }
 
+    (function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+            (n = o.createElement("script")),
+                (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
 
-</body></html>
+</body>
+</html>
